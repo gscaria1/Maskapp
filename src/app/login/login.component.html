@@ -1,0 +1,39 @@
+<title>LOG-IN</title>
+
+ 
+<br><br><br><br>
+<div class="col-md-4 bg container-fluid  "style="margin-left: 450px " data-aos="slide-right">
+
+   
+<form name="form" (ngSubmit)="f.form.valid && inuser()" #f="ngForm" novalidate>
+    
+    <img src="../../assets/images/boy-and-girl-icon-53.png "style="height:150px;margin-left:130px" alt="" srcset=""><br><br> 
+    
+    
+    <div class="form-group">
+          <input  placeholder="USER-ID" type="text" class="form-control d" name="userid" [(ngModel)]="loguser.userid" #userid="ngModel" [ngClass]="{ 'is-invalid': f.submitted && userid.invalid }" required userid />
+           <div *ngIf="f.submitted && userid.invalid" class="invalid-feedback">USER-ID is required</div>
+            
+    </div><br>
+    
+    <div class="form-group">
+        <input type="password" class="form-control d" placeholder="PASSWORD" name="password" [(ngModel)]="loguser.password" #password="ngModel" [ngClass]="{ 'is-invalid': f.submitted && password.invalid }" required  />
+        <div *ngIf="f.submitted && password.invalid" class="invalid-feedback">Password is required</div>
+    
+    </div><br>
+    
+       
+    <div class="form-group">
+          <button class="btn btn-danger hvr-hang d" type="submit"style="margin-left:160px">LOG IN</button>
+    </div>
+     
+    <br>
+   
+    
+    </form>
+    
+    
+
+
+</div>
+

@@ -1,0 +1,47 @@
+<title>UPLOADS</title>
+
+    <div class=" cobg ">
+
+        <div class="home rectbg ">
+
+           
+            <div *ngFor='let feed of feeds' >
+               
+               <br>
+               <div data-aos="fade-up"data-aos-delay="100" class="in "><img [src]='feed.Imageurl' alt="" srcset=""class="rounded-circle left" height="100px"style="margin-left:20px"></div>
+               <h2 data-aos="fade-up"data-aos-delay="100" class="in font-family: cursive "style="margin-left:50px;color:grey;font-size:30px;font-family:fantasy">{{feed.Item}}</h2><br><br><br>
+               <p  data-aos="fade-up"data-aos-delay="200" href=""style="margin-left:50px;font-family:fantasy"> Phone No : {{feed.phno}}</p><br>
+               <p  data-aos="fade-up"data-aos-delay="200" href=""style="margin-left:50px;font-family:fantasy"> Quantity : {{feed.Quantity}}</p><br>
+               <p  data-aos="fade-up"data-aos-delay="200" href=""style="margin-left:50px;font-family:fantasy"> Description : {{feed.Description}}</p><br>
+               <p  data-aos="fade-up"data-aos-delay="200" href=""style="margin-left:50px;font-family:fantasy"> To : {{feed.Post}}</p><br>
+               <button data-aos="fade-up"data-aos-delay="200" class="btn del hvr-hang"(click)="delpro(feed._id)"style="margin-left:40px">DELETE</button> 
+               <a routerLink="/{{feed.Userid}}//update/{{feed._id}}" class=""style="margin-left:20px"> <button data-aos="fade-up"data-aos-delay="200" class="btn up hvr-hang" >UPDATE</button></a><br><br>
+               
+               <div style="border-bottom:1px solid whitesmoke"></div><br>
+              
+            </div>
+
+          
+        </div>
+    
+
+
+
+
+    </div>
+
+    <!-- <div class="bod"> 
+
+        <div class="container">
+            
+            <div class="bg1">
+                 <a href="">CRICKET</a>
+                
+            </div>
+            
+    
+        </div>
+     
+    </div> -->
+
+

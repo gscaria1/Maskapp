@@ -1,0 +1,31 @@
+<title>HOME</title>
+
+    <div class=" cobg ">
+
+        <div class=" rectbg " data-aos="slide-right" >
+         
+           
+            <div *ngFor='let feed of feeds' >
+               
+               
+               <div data-aos="fade-up"data-aos-delay="100" class="in "><img [src]='feed.Imageurl' alt="" srcset=""class="rounded-circle left" height="100px"style="margin-left:20px"></div>
+               <h2 data-aos="fade-up"data-aos-delay="100" class="in "style="margin-left:50px;color:grey;font-size:30px; font-family:fantasy">{{feed.Item}}</h2><br><br>
+               <p  data-aos="fade-up"data-aos-delay="200" href=""style="margin-left:50px; font-family:fantasy ">Shared by : {{feed.Userid}}</p><br> 
+               <p  data-aos="fade-up"data-aos-delay="200" href=""style="margin-left:50px;font-family:fantasy"> Phone No : {{feed.phno}}</p><br>
+               <p  data-aos="fade-up"data-aos-delay="200" href=""style="margin-left:50px;font-family:fantasy"> Quantity : {{feed.Quantity}}</p><br>
+               <p  data-aos="fade-up"data-aos-delay="200" href=""style="margin-left:50px;font-family:fantasy"> Description : {{feed.Description}}</p><br>
+               <p  data-aos="fade-up"data-aos-delay="200" href=""style="margin-left:50px;font-family:fantasy"> To : {{feed.Post}}</p><br>
+               <button data-aos="fade-up"data-aos-delay="200" *ngIf="!_auth.admin()"class="btn del hvr-hang"(click)="delpro(feed._id)"style="margin-left:40px">DELETE</button> <br><br>
+               <div style="border-bottom:1px solid whitesmoke"></div>
+           
+            </div>
+
+          
+        </div>
+    
+
+
+
+
+    </div>
+

@@ -1,0 +1,41 @@
+
+.cobg{
+    background-color:rgba(139, 32, 211, 0.787) ;
+    height:300px;
+    position: relative; 
+}
+.rectbg{
+    background-color:white;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    opacity: 100;
+    z-index:2;
+    margin:200px;
+    border-radius: 10px;
+    box-shadow:  0px 0px 10px 0px black;
+    height: auto;
+    margin-left:350px;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+option:disabled {
+    color: red;
+  }
+
+
+.in{
+    display:inline-block;
+}
+
+.font
+{
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.border-b{
+    border-color:rgb(131, 185, 230)
+}

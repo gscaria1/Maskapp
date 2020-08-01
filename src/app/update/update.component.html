@@ -1,0 +1,94 @@
+<title>UPDATE-DONATION</title>
+<div class="storystrap cobg "><br>
+
+      
+    
+  <div class=" rectbg container-fluid an   col-md-6 border border-primary bg"data-aos="slide-right">
+
+       <h3>UPDATE DONATION</h3><br>
+            
+        <form name="form" (ngSubmit)='f.form.valid && UProduct()'#f="ngForm" novalidate >
+    
+  
+           <div class="form-group">
+        
+            <input [(ngModel)]='donate.Userid'  type="text" class="form-control" name="userid"  #userid="ngModel"   readonly />
+            
+            </div>
+
+            <div class="form-group">
+        
+              <input [(ngModel)]='donate.phno' placeholder="PHONE NUMBER" type="text" class="form-control" name="phno"  #phno="ngModel" [ngClass]="{ 'is-invalid': f.submitted && phno.invalid }" required phno   />
+              
+              </div>
+  
+
+          <div class="form-group">
+            <select name="Item" [(ngModel)]="donate.Item" class="form-control" name="#Items" #Items="ngModel" [ngClass]="{ 'is-invalid': f.submitted && Items.invalid }"  Items required>
+            <option [ngValue]="null" [disabled]="true" >Select your item</option>
+            <option value="Mask">Mask</option>
+            <option value="Sanitizer">Sanitizer</option>
+            <option value="Gloves">Gloves</option>
+            <option value="Personal Protective Equipment Kit">Personal Protective Equipment Kit</option>
+            </select>
+            <div *ngIf="f.submitted && Items.invalid" class="invalid-feedback">required
+            </div>
+          
+          
+          </div>
+
+
+          <div class="form-group">
+          
+            <input [(ngModel)]='donate.Quantity' placeholder="QUANTITY" type="text" class="form-control" name="quantity"  #quantity="ngModel" [ngClass]="{ 'is-invalid': f.submitted && quantity.invalid }" required quantity   />
+            <div *ngIf="f.submitted && quantity.invalid" class="invalid-feedback">required
+            </div>
+          </div>
+
+
+          <div class="form-group">
+            <select name="Item" [(ngModel)]="donate.Imageurl" class="custom-select" name="Imageurl" #Imageurl="ngModel" [ngClass]="{ 'is-invalid': f.submitted && Imageurl.invalid }"  Imageurl required>
+            <option  selected disabled >Select icon</option>
+            <!-- <option value="https://www.pennlive.com/resizer/IEB_Yqz3Jk7WcspvyGGQ_J3zcSI=/450x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/BYMAZ4PXUFGLLAQYXXDKXWLGLY.JPG">Mask Icon</option> -->
+            <option value="assets/images/002-archery.jpg">Mask Icon</option>
+            
+            <option value="https://image.freepik.com/free-vector/flat-design-person-using-hand-sanitizer_23-2148476372.jpg">Sanitizer Icon</option>
+            <option value="https://5.imimg.com/data5/EN/VR/MG/SELLER-3499144/nitrile-disposable-gloves-500x500.jpg">Gloves Icon</option>
+            <option value="https://www.foremansafetysupply.com/wp-content/uploads/2017/06/RCMP_PPEBC.jpg">PPE Kit Icon</option>
+            </select>
+            <div *ngIf="f.submitted && Imageurl.invalid" class="invalid-feedback">required
+            </div>
+          
+          
+          </div>
+
+
+          <div class="form-group">
+          <input [(ngModel)]='donate.Description' placeholder="DESCRIPTION" type="text" class="form-control" name="description" #description="ngModel" [ngClass]="{ 'is-invalid': f.submitted && description.invalid }" required description/>
+          <div *ngIf="f.submitted && description.invalid" class="invalid-feedback">required
+          </div>
+          </div> 
+
+          <div class="form-group">
+            <select  [(ngModel)]="donate.Post" class="custom-select" name="Post" #Post="ngModel" [ngClass]="{ 'is-invalid': f.submitted && Post.invalid }"  Post required>
+              <option [ngValue]="null" [disabled]="true" >Donate or Sell?</option>
+            <option value="Donate">Donate</option>
+            <option value="Sell">Sell</option>
+            </select>
+            <div *ngIf="f.submitted && Post.invalid" class="invalid-feedback">required
+            </div></div>
+
+
+
+          <br>
+  
+          <div class="form-group">
+          <input type="submit" value="UPDATE"class='btn btn-primary hvr-hang'>
+          </div>
+  
+  
+      </form>
+ 
+    </div>
+ 
+</div>

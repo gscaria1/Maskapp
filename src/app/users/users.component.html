@@ -1,0 +1,24 @@
+<title>USERS</title>
+<div class="storystrap cobg "><br>
+
+      
+    
+  <div class=" rectbg container-fluid an   col-md-6 border border-primary bg" data-aos="slide-right">
+
+       <h3 style="margin-left: 270px;">USERS</h3><br>
+
+       <div *ngFor='let user of users' >
+               
+        <br>
+        <div data-aos="fade-up"data-aos-delay="100" class="in "><img [src]='user.image' alt="" srcset=""class="rounded-circle left" height="100px"style="margin-left:20px"></div>
+        <h2 data-aos="fade-up"data-aos-delay="100" class="in "style="margin-left:50px;color:grey;font-size:30px; font-family:fantasy">{{user.userid}}</h2><br><br>
+        
+        <button data-aos="fade-up"data-aos-delay="200" class="btn del hvr-hang"(click)="delpro(user._id)"style="margin-left:170px">DELETE</button><br> <br>
+        <div style="border-bottom:1px solid whitesmoke"></div>
+    
+     </div>
+        
+ 
+    </div>
+ 
+</div>

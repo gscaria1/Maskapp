@@ -1,0 +1,120 @@
+
+.cobg{
+    background-color: rgba(139, 32, 211, 0.787) ;
+    height:300px;
+    position: relative; 
+}
+.rectbg{
+    background-color:white;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    opacity: 100;
+    z-index:2;
+    margin:40px;
+    border-radius: 10px;
+    box-shadow:  0px 0px 10px 0px black;
+    height: auto;
+    margin-left:300px;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 800px;
+}
+
+body{
+    background-color:rgb(146, 228, 153)
+}
+
+.btn-custom {
+
+    background-color:skyblue
+}
+
+.btn-d{
+    background-color: rgb(0, 76, 255);
+}
+
+
+.in{
+    display:inline-block;
+}
+
+.font
+{
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.del{
+    
+    background-color:red;
+}
+
+/* 
+@import url('http://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ 
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:10px;
+    min-width: 100% !important;
+  
+    
+}
+
+.container>div{
+    cursor:pointer;
+    height:240px;
+    background-size: cover;
+    background-attachment:fixed;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    
+}
+a{text-decoration: none;
+color: white;}
+
+
+.container>div:hover{
+    opacity: 0.7;
+    transform:scale(0.98);
+}
+/* 
+.bg1{
+    /* background-color: blueviolet; */
+    /* background-image: url('../../assets/images/sport-related-icons-background_24908-9611.jpg');
+
+}
+
+.container>div:nth-of-type(5){
+    grid-column: 2/4;
+}
+.container>div:nth-of-type(1){
+    grid-column: 1/3;
+}
+.container>div:nth-of-type(7){
+    grid-column: 1/3;
+}
+.container>div:nth-of-type(12){
+    grid-column: 3/5;
+}
+
+.bod{
+    background-color:#333;
+    
+    font-family: 'Roboto', sans-serif;
+   
+} */
+
+ 

@@ -1,0 +1,50 @@
+.cobg{
+    background-color: rgb(120, 120, 216) ;
+    height:auto;
+    position: relative; 
+}
+.rectbg{
+    background-color:white;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    opacity: 100;
+    z-index:2;
+    margin:70px;
+    width: 1285px;
+    height: auto;
+    margin-left:31px;
+    margin-right: 10px;
+    border-radius: 10px;
+    box-shadow:  0px 0px 10px 0px black;
+}
+
+body{
+    background-color:rgb(146, 228, 153)
+}
+
+.btn-custom {
+
+    background-color:skyblue
+}
+
+
+
+.in{
+    display:inline-block;
+}
+
+.font
+{
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.del{
+    
+    background-color:red;
+}
+
+.up{
+    background-color:yellow;
+}
